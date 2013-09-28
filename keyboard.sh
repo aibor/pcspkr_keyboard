@@ -38,7 +38,7 @@ do
         5) note=61;;
         t) note=$t;;
         6) note=63;;
-        y) note=$y;;
+        z) note=$y;;
         u) note=$u;;
         8) note=66;;
         i) note=$i;;
@@ -46,12 +46,13 @@ do
         o) note=$o;;
         0) note=70;;
         p) note=$p;;
-        "-") note=73;;
-        "[") note=72;;
-        "=") note=75;;
-        "]") note=74;;
+        "ß") note=73;;
+        "ü") note=72;;
+        "´") note=75;;
+        "+") note=74;;
         '\') note=76;;
-        a) note=0;;
+        m) exit;;
+        *) note=0;;
     esac
     tone $note
     sleep 0.1
